@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fondoCitaAgendada"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFDEDE"
+    tools:context=".cita">
+
+    <TextView
+        android:id="@+id/tvCitaPant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:text="@string/cita"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="411dp"
+        android:layout_height="538dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvCitaPant">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvNombre"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center|center_horizontal"
+                android:text="@string/nombreResutado"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tvDUI"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center|center_horizontal"
+                android:text="@string/duiResultado"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tvCarnet"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center|center_horizontal"
+                android:text="@string/carnetResultado"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tvFecha"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center|center_horizontal"
+                android:text="@string/fecha"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tvTurno"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center|center_horizontal"
+                android:text="@string/hora"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tvMotivoConsulta"
+                android:layout_width="200dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center|center_horizontal"
+                android:text="@string/MotivodeConsulta"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/tvEstado"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:fontFamily="sans-serif-condensed"
+                android:gravity="center|center_horizontal"
+                android:text="@string/Estado_cita"
+                android:textColor="@color/black" />
+
+            <Button
+                android:id="@+id/btnCancelarCita"
+                android:layout_width="238dp"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:onClick="cancelarCita"
+                android:text="@string/btnCancelar"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

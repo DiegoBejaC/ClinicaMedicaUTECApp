@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.clinicav2">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CLINICAv2">
+        <activity android:name=".SplashInicial">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".InicioSesion" />
+        <activity android:name=".AgendaCita" />
+        <activity
+            android:name=".InfoContacto"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".Acerca_De"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".cita"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".HorariosAtencion"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".SettingsClinica"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".ConsultaCitasAdmin"
+            android:parentActivityName=".InicioSesion" />
+        <activity android:name=".MainActivity"></activity>
+        <activity android:name="EditarCita"></activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+    <ListPreference
+        android:key="textSize"
+        android:title="Tamaño del texto"
+        android:entries="@array/text_values"
+        android:entryValues="@array/text_key"
+        android:defaultValue="textSmall"
+        />
+    <ListPreference
+        android:key="backgroundColor"
+        android:title="Tema"
+        android:entries="@array/theme_values"
+        android:entryValues="@array/theme_key"
+        android:defaultValue="light"
+        />
+
+
+</PreferenceScreen>

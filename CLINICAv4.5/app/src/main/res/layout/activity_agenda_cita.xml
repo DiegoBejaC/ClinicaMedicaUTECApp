@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fondoAgendarCita"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFDEDE"
+    tools:context=".AgendaCita"
+    tools:layout_editor_absoluteY="81dp">
+
+    <TextView
+        android:id="@+id/tvAgendarCitaPant"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-condensed-medium"
+        android:gravity="center_horizontal"
+        android:text="@string/agendar_cita"
+        android:textColor="@color/black"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ScrollView
+        android:layout_width="330dp"
+        android:layout_height="411dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tvAgendarCitaPant">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvAC1"
+                android:layout_width="wrap_content"
+                android:layout_height="29dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:gravity="center"
+                android:text="@string/nombre_completo"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txtNombre"
+                android:layout_width="294dp"
+                android:layout_height="51dp"
+                android:autofillHints=""
+                android:background="@color/white"
+                android:ems="10"
+                android:fontFamily="monospace"
+                android:hint="@string/nombre_completo"
+                android:inputType="textPersonName"
+                android:text="@string/nombre_de_prueba"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tvAC2"
+                android:layout_width="wrap_content"
+                android:layout_height="29dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:gravity="center"
+                android:text="@string/dui"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txtDui"
+                android:layout_width="294dp"
+                android:layout_height="51dp"
+                android:autofillHints=""
+                android:background="@color/white"
+                android:ems="10"
+                android:fontFamily="monospace"
+                android:hint="@string/_00000000_0"
+                android:inputType="textPersonName"
+                android:text="@string/_99999999_9"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                tools:layout_editor_absoluteX="35dp"
+                tools:layout_editor_absoluteY="187dp" />
+
+            <TextView
+                android:id="@+id/tvAC3"
+                android:layout_width="wrap_content"
+                android:layout_height="29dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:gravity="center"
+                android:text="@string/carnet"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold"
+                tools:layout_editor_absoluteX="187dp"
+                tools:layout_editor_absoluteY="250dp" />
+
+            <EditText
+                android:id="@+id/txtCarnet"
+                android:layout_width="294dp"
+                android:layout_height="51dp"
+                android:autofillHints=""
+                android:background="@color/white"
+                android:ems="10"
+                android:fontFamily="monospace"
+                android:hint="@string/formatoCarnet"
+                android:inputType="textPersonName"
+                android:text="@string/_22_4444_2000"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                tools:layout_editor_absoluteX="35dp"
+                tools:layout_editor_absoluteY="282dp" />
+
+            <TextView
+                android:id="@+id/tvAC4"
+                android:layout_width="wrap_content"
+                android:layout_height="29dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="@string/fechacita1"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txtFecha"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autofillHints=""
+                android:background="@color/white"
+                android:ems="10"
+                android:fontFamily="monospace"
+                android:hint="@string/dd_mm_yyyy"
+                android:inputType="date"
+                android:text="@string/_2025_12_24"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tvAC6"
+                android:layout_width="wrap_content"
+                android:layout_height="29dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:gravity="center"
+                android:text="@string/descripci_n_del_motivo"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/txtMotivo"
+                android:layout_width="252dp"
+                android:layout_height="157dp"
+                android:autofillHints=""
+                android:background="@color/white"
+                android:ems="10"
+                android:fontFamily="monospace"
+                android:gravity="start|top"
+                android:hint="@string/ingrese_el_motivo_de_su_consulta"
+                android:inputType="textMultiLine"
+                android:text="@string/mi_motivo_es"
+                android:textColor="@color/black"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tvAC5"
+                android:layout_width="wrap_content"
+                android:layout_height="29dp"
+                android:fontFamily="sans-serif-condensed-medium"
+                android:gravity="center_horizontal|center_vertical"
+                android:text="@string/turnoCita1"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+
+            <Spinner
+                android:id="@+id/spTurnos"
+                android:layout_width="208dp"
+                android:layout_height="32dp"
+                android:background="@color/white"
+                android:spinnerMode="dropdown" />
+
+            <Button
+                android:id="@+id/btnSiguiente2"
+                android:layout_width="182dp"
+                android:layout_height="61dp"
+                android:background="@empty"
+                android:fontFamily="sans-serif-black"
+                android:onClick="agendarCitaNueva"
+                android:text="@string/agendar"
+                android:textColor="@color/white" />
+
+            <Button
+                android:id="@+id/btnCancelar2"
+                android:layout_width="173dp"
+                android:layout_height="wrap_content"
+                android:background="@empty"
+                android:fontFamily="sans-serif-black"
+                android:onClick="regresarMenu"
+                android:text="@string/regresar2"
+                android:textColor="@color/white" />
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,7 @@
+DESCRIPCIÓN DEL SISTEMA-----
+
+Aplicación para dispositivos Android programada en el IDE Android Studio utilizando el lenguaje Java. El proyecto consiste en una aplicación móvil destinada al registro de las citas de los pacientes de la Clínica Médica de la Universidad Tecnológica de El Salvador (UTEC). Cuenta con un menú donde el usuario puede agendar su cita ingresando sus datos esenciales en un formulario que luego mandará los datos a una base de datos SQLite (que por el momento está colocada de manera local en los archivos internos de la aplicación).
+
+También permite al usuario ver la información de contacto de la clínica, así como los horarios de atención. Además, contiene una opción de configuración que permite cambiar el tamaño de la letra y el tema a uno claro u oscuro. Al final, la aplicación cuenta con un inicio de sesión para administradores, quienes luego tendrán acceso a los datos de las citas y los pacientes contenidos en el sistema, y poder realizar el mantenimiento respectivo.
+
+Esta app fue programada como parte de un trabajo de investigación para la asignatura electiva técnica 1 de la carrera de Ingeniería en Sistemas de la UTEC.
